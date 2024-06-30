@@ -20,9 +20,19 @@ module.exports = {
     es6: true,
   },
   ignorePatterns: ["!**/.server", "!**/.client"],
-
+  plugins: [
+    "unused-imports",
+    "tailwindcss"
+  ],
+  rules: {
+    "unused-imports/no-unused-imports": "warn",
+  },
   // Base config
-  extends: ["eslint:recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
 
   overrides: [
     // React
@@ -54,6 +64,9 @@ module.exports = {
     {
       files: ["**/*.{ts,tsx}"],
       plugins: ["@typescript-eslint", "import"],
+      rules: {
+        "@typescript-eslint/no-unused-vars": "off"
+      },
       parser: "@typescript-eslint/parser",
       settings: {
         "import/internal-regex": "^~/",
