@@ -1,4 +1,4 @@
-import { SidebarPURE } from "~/components/pages/sidebar/SidebarPURE";
+import { SidebarPURE } from "~/components/pages/sidebarpure/SidebarPURE";
 
 export default function Index() {
   return <SidebarPURE />;
