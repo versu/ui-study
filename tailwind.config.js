@@ -26,6 +26,7 @@ module.exports = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          1: "#BEB8EB"
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -42,6 +43,7 @@ module.exports = {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          1: "#004385"
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -51,6 +53,16 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        dark: {
+          // border
+          1: "rgba(0,0,0,0.12)",
+          // disable
+          2: "rgba(0,0,0,0.26)",
+          // sub text
+          3: "rgba(0,0,0,0.54)",
+          // text
+          4: "rgba(0,0,0,0.87)",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
