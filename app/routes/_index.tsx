@@ -18,6 +18,9 @@ export default function Index() {
       <li>
         <Link to="/toast">Toast</Link>
       </li>
+      <li>
+        <Link to="/carousel">Carousel</Link>
+      </li>
     </div>
   );
 }
